@@ -1,0 +1,13 @@
+ Paso 1: Verificar qué usa el puerto 3306
+Presiona Windows + R, escribe cmd y presiona Enter.
+
+Paso 2: En la ventana negra que aparece, copia y pega este comando:
+netstat -ano | findstr :3306
+Paso 3: Si el puerto está ocupado, verás algo como esto:
+TCP    0.0.0.0:3306     0.0.0.0:0     LISTENING     1234
+Atención al número al final (ejemplo: 1234), porque es el PID (Identificador del proceso) que está usando el puerto.
+taskkill /PID 1234 /F
+
+ Ejemplo: Si viste que el PID es 7060, ejecutas:
+ taskkill /PID 7060 /F
+Si el comando fue exitoso, el proceso que usaba el puerto se cerrará y quedará libre.

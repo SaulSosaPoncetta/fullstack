@@ -1,0 +1,67 @@
+
+.body {
+    padding: 5px;
+}
+
+.encabezado {
+    text-align: center;
+    color: white;
+    background-color: grey;
+    height: 100px;
+    width: 100%;
+    border: 5px solid black;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(215, 142, 5);
+    height: 500px;
+    width: 100%;
+    border: 5px solid rgb(139, 5, 5);
+}
+
+.izquierda {
+    text-align: center;
+    color: white;
+    background-color: rgb(18, 18, 18);
+    height: 480px;
+    width: 700px;
+
+}
+
+.derecha {
+    text-align: center;
+    color: white;
+    background-color: rgb(92, 92, 89);
+    height: 480px;
+    width: 700px;
+}
+
+.derechaarriba {
+    height: 250px;
+    background-color: aqua;
+    padding: 5px 5px 5px 5px;
+}
+
+.derechaabajo {
+    height:210px;
+    background-color: brown;
+    padding: 5px 5px 5px 5px;
+}
+
+.pie {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+    border: 5px solid black;
+}
+
+
+.cuerpo p {
+    color: orchid;
+}

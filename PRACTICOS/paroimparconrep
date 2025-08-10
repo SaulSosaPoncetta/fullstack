@@ -1,0 +1,12 @@
+Algoritmo ParImpar
+Definir numIngresado Como Entero
+Repetir
+Escribir "Ingrese un número"
+Leer numIngresado
+Hasta Que numIngresado > 0
+Si numIngresado MOD 2 = 0 Entonces
+Escribir "El número es par"
+Sino
+Escribir "El número es impar"
+FinSi
+FinAlgoritmo

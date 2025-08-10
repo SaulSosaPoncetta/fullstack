@@ -1,0 +1,5 @@
+-- SELECT p.* FROM e01_producto p LEFT JOIN e01_detalle_factura df ON p.codigo_producto = df.codigo_producto WHERE df.codigo_producto IS NULL;
+-- SELECT DISTINCT p.* FROM e01_producto p JOIN e01_detalle_factura df ON p.codigo_producto = df.codigo_producto JOIN e01_factura f ON df.nro_factura = f.nro_factura WHERE YEAR(f.fecha) = 2017;
+-- SELECT p.* FROM e01_producto p JOIN e01_detalle_factura df ON p.codigo_producto = df.codigo_producto WHERE df.nro_factura = 5;
+-- SELECT DISTINCT p.* FROM e01_producto p JOIN e01_detalle_factura df ON p.codigo_producto = df.codigo_producto WHERE p.precio < 100 AND p.stock > 200;
+-- SELECT c.nombre, c.apellido, p.nombre AS 'producto comprado' FROM e01_cliente c JOIN e01_factura f ON c.nro_cliente = f.nro_cliente JOIN e01_detalle_factura df ON f.nro_factura = df.nro_factura JOIN e01_producto p ON df.codigo_producto = p.codigo_producto WHERE LOWER(p.descripcion) LIKE '%ui%' OR LOWER(p.descripcion) LIKE '%re%';

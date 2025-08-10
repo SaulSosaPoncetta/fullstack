@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="../css/productos.css">
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+            <img class="logo" src="../imgenes/supermarket-shop-logo-vector.jpg" alt="logotipo">
+        </div>
+        <div class="container">
+            <nav>
+                <ul class="listmenu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html">Productos</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Productos</h1>
+        </div>
+        <section id="productos-lista">
+            <div class="contenedorgeneral" id="productos"></div>
+            <div class="contenedorfinal"><button onclick="calcularTotal()">Calcular Total</button>
+                <p class="total" id="total">Total de la compra $: 0.00</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>Direccion: Colon 1975, Ciudad de Olavarria</p>
+            <p>Telefono: 54 2284 580012</p>
+            <p></p>
+        </div>
+    </footer>
+        <script src="../js/productos.js" defer></script>
+    </body>
+</html>

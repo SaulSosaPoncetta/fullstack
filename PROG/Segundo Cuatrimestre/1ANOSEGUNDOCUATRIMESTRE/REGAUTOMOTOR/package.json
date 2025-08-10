@@ -1,0 +1,24 @@
+{
+    "name": "nombre-del-proyecto",
+    "version": "1.0.0",
+    "description": "Descripción breve del proyecto",
+    "main": "main.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "palabra",
+        "clave"
+    ],
+    "author": "Nombre del autor",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "ts-node": "^10.9.2",
+        "typescript": "^4.9.5"
+    }
+}

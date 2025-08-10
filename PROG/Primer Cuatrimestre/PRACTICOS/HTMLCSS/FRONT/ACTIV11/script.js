@@ -1,0 +1,1 @@
+// document.querySelector(".ofertas .card .descripcioncard3")

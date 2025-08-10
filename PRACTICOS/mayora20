@@ -1,0 +1,10 @@
+Algoritmo Mayor20
+    Definir nroDeseado Como Real
+    Escribir 'Escriba el número que desea verificar si es mayor o no a 20: '
+    Leer nroDeseado
+    Si (nroDeseado)>(20) Entonces
+        Escribir 'El número es mayor a 20: ', nroDeseado
+        Sino
+            Escribir 'El número es menor o igual a 20: ', nroDeseado
+    FinSi
+FinAlgoritmo

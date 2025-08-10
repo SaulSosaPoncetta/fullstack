@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: burlywood;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+}
+.tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    width: 250px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: orangered;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+

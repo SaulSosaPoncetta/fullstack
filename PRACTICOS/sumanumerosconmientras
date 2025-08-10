@@ -1,0 +1,14 @@
+Algoritmo SumaEntreNumeros
+Definir primerNum, segundoNum, actual, suma Como Entero
+Escribir 'Ingrese el primer número: '
+Leer primerNum
+Escribir 'Ingrese el segundo número: '
+Leer segundoNum
+actual = primerNum
+suma = 0
+Mientras actual <= segundoNum Mientras
+suma = suma + actual
+actual = actual + 1
+FinMientras
+Escribir "El resultado de la suma es: ", suma
+FinAlgoritmo

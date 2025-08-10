@@ -1,0 +1,10 @@
+-- SELECT * FROM e01_cliente;
+-- SELECT nombre, apellido FROM e01_cliente;
+-- SELECT DISTINCT nombre FROM e01_producto;
+-- SELECT DISTINCT SUBSTRING(nro_telefono, 1, 3) AS codigo_area FROM e01_telefono;
+-- SELECT * FROM e01_producto WHERE stock > 50 AND stock < 200;
+-- SELECT * FROM e01_producto WHERE codigo_producto = 50;
+-- SELECT * FROM e01_factura WHERE total_con_iva > 40000 AND nro_cliente = 8;
+-- SELECT * FROM e01_cliente WHERE nombre = 'Ivor' AND apellido = 'Saunders';
+-- SELECT * FROM e01_factura WHERE nro_cliente = 10;
+-- SELECT * FROM e01_factura WHERE total_con_iva > 50000;

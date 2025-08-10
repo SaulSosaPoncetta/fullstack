@@ -1,0 +1,57 @@
+Git comandos
+Ver la versión de Git instalada
+Git –version
+Configurar git
+$ git config --global user.name “usuario" *configurar usuario
+$ git config --global user.email  usuario@example.com  *configurar email de usuario
+
+Verificar usuario y email
+$ git config --global -e
+
+
+
+
+
+paso 1:npm init  • Genera el archivo package.json
+paso 2:npm install instalar dependencias
+paso 3:npm install -g typescript instalar typeScript
+paso 4:checkear si se instalo la version tsc --version
+
+
+
+dependencias require
+
+npm install -g require
+npm install --save readline-sync
+
+npm i --save --dev @types/node para instalar las dependencias
+
+npm install gitignore -g git ignore
+
+
+
+A continuación de compartimos los comandos más usados con git:
+
+1
+git init: comando para inicializar un repositorio local. 
+
+2
+git add: comando para que nuestro repositorio sepa de la existencia de un archivo o de sus últimos cambios, no almacena las actualizaciones de forma definitiva, únicamente las guarda en algo que conocemos como “Staging Area” (área de montaje o ensayo). Se puede armar como git add ArchivoEjemplo.js (solo agrega ese archivo) o git add (agrega todos los archivos modificados de la carpeta donde estas con el punto. 
+
+3
+git commit -m "mensaje": comando para almacenar definitivamente todos los cambios que por ahora viven en el staging área. En el mensaje ponemos el mensaje que explica los cambios commiteados. 
+
+4
+git push: comando para mandar nuestros commits a un servidor remoto.
+
+5
+git status: ofrece una descripción del estado de los archivos.
+
+6
+git pull: sirve para recibir cambios de repositorio remoto a local.
+
+Recuerda que Git nunca cambiará las versiones seguras de tu proyecto, a no ser que se lo pidas expresamente. De esta forma, estamos guardando el estado actual de nuestro proyecto, para volver a visitarlo de ser necesario y por supuesto para mantenerlo a lo largo del tiempo.
+
+
+
+

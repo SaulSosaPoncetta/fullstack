@@ -1,0 +1,29 @@
+1)Vemos si Git esta instalado 
+ Git -v o git version
+
+2)inicializar un repo local
+ Git init
+
+3)Clonar un repo desde GitHub
+Git clone <url>
+
+4)ver lo que hay en mi entorno de desarrollo
+Git Status
+
+5)agregar archivos al local 
+git add <nombre del archivo> o git add . (agrega todos los archivos)
+
+6)hacemos un commit
+git commit -m (mensaje)
+
+7) para volver para atras o deshacer
+git restore
+
+8)subimos nuestro local al remoto
+git push origin main o branch
+
+
+
+https://github.com/gonzalezvictorjuan
+https://github.com/alejandrosantini
+https://github.com/ksimari92

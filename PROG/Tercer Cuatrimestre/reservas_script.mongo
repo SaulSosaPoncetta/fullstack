@@ -1,0 +1,75 @@
+
+// Inserción de documentos en la colección "reservas"
+db.reservas.insertMany([
+  {
+    codigo_reserva: "R001",
+    estado: "confirmada",
+    fecha_creacion: "2025-04-15T10:30:00Z",
+    pasajero: {
+      nombre: "Juan Pérez",
+      contacto: "+34123456789",
+      identificacion: "DNI12345678"
+    },
+    vuelo: {
+      aerolinea: "Air Europa",
+      origen: "Buenos Aires",
+      destino: "Madrid",
+      horario: "2025-06-15T14:00:00Z"
+    }
+  },
+  {
+    codigo_reserva: "R002",
+    estado: "cancelada",
+    fecha_creacion: "2025-03-20T09:15:00Z",
+    pasajero: {
+      nombre: "María López",
+      contacto: "+34987654321",
+      identificacion: "DNI87654321"
+    },
+    vuelo: {
+      aerolinea: "Iberia",
+      origen: "Barcelona",
+      destino: "París",
+      horario: "2025-06-05T08:00:00Z"
+    }
+  },
+  {
+    codigo_reserva: "R003",
+    estado: "confirmada",
+    fecha_creacion: "2025-05-01T11:00:00Z",
+    pasajero: {
+      nombre: "Carlos Gómez",
+      contacto: "+34911223344",
+      identificacion: "DNI11223344"
+    },
+    vuelo: {
+      aerolinea: "Iberia",
+      origen: "Madrid",
+      destino: "París",
+      horario: "2025-06-10T09:45:00Z"
+    }
+  }
+]);
+
+// Consulta 1: Obtener todas las reservas confirmadas con destino "Madrid" y vuelo posterior a "2025-06-01"
+db.reservas.find({
+  estado: "confirmada",
+  "vuelo.destino": "Madrid",
+  "vuelo.horario": { $gt: "2025-06-01T00:00:00Z" }
+});
+
+// Consulta 2: Contar cuántas reservas hay por aerolínea
+db.reservas.aggregate([
+  {
+    $group: {
+      _id: "$vuelo.aerolinea",
+      cantidadReservas: { $sum: 1 }
+    }
+  }
+]);
+
+// Consulta 3: Modificar las reservas con destino "París", agregando un campo "descuento"
+db.reservas.updateMany(
+  { "vuelo.destino": "París" },
+  { $set: { descuento: true } }
+);

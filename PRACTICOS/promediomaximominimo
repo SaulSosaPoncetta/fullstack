@@ -1,0 +1,30 @@
+Algoritmo PromMinMax
+Definir num, min, max, sum, avg, count Como Real
+Escribir "Ingrese un número (0 para cortar)"
+Leer num
+count = 0
+sum = 0
+min = num
+max = num
+Mientras num != 0 Hacer
+Si num < min Entonces
+min = num
+Sino
+Si num > max Entonces
+max = num
+FinSi
+FinSi
+sum = sum + num
+count = count + 1
+Escribir "Ingrese un número (0 para cortar)"
+Leer num
+FinMientras
+Si count > 0 Entonces
+avg = sum / count
+Escribir "El mínimo es: ", min
+Escribir "El máximo es: ", max
+Escribir "El promedio es: ", avg
+Sino
+Escribir "No ingreso ningún número!"
+FinSi
+FinAlgoritmo

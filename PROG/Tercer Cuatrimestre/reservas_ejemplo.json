@@ -1,0 +1,66 @@
+[
+    {
+        "codigo_reserva": "ABC123",
+        "estado": "confirmada",
+        "fecha_creacion": "2025-05-20",
+        "pasajero": {
+            "nombre": "Juan Pérez",
+            "contacto": "+54113456789",
+            "identificacion": "DNI 34567890"
+        },
+        "vuelo": {
+            "aerolinea": "Iberia",
+            "origen": "Buenos Aires",
+            "destino": "Madrid",
+            "horario": "2025-06-15T10:00:00Z"
+        }
+    },
+    {
+        "codigo_reserva": "XYZ789",
+        "estado": "cancelada",
+        "fecha_creacion": "2025-05-22",
+        "pasajero": {
+            "nombre": "María Gómez",
+            "contacto": "+5491122233344",
+            "identificacion": "DNI 22334455"
+        },
+        "vuelo": {
+            "aerolinea": "Air France",
+            "origen": "Córdoba",
+            "destino": "París",
+            "horario": "2025-06-10T14:30:00Z"
+        }
+    },
+    {
+        "codigo_reserva": "LMN456",
+        "estado": "confirmada",
+        "fecha_creacion": "2025-05-25",
+        "pasajero": {
+            "nombre": "Carlos Díaz",
+            "contacto": "+5491133344455",
+            "identificacion": "DNI 11223344"
+        },
+        "vuelo": {
+            "aerolinea": "Iberia",
+            "origen": "Mendoza",
+            "destino": "Madrid",
+            "horario": "2025-06-20T18:00:00Z"
+        }
+    },
+    {
+        "codigo_reserva": "QWE321",
+        "estado": "confirmada",
+        "fecha_creacion": "2025-05-28",
+        "pasajero": {
+            "nombre": "Lucía Romero",
+            "contacto": "+5491166677788",
+            "identificacion": "DNI 99887766"
+        },
+        "vuelo": {
+            "aerolinea": "LATAM",
+            "origen": "Rosario",
+            "destino": "París",
+            "horario": "2025-07-01T08:00:00Z"
+        }
+    }
+]
